@@ -1,15 +1,15 @@
 # Advent of Code
 
 Here are my solutions for the annual Advent of Code (AoC) event in December. Hohoho!🎄🎅🎄
-* 2022 - 2 ⭐ (Python)
-* 2021 - 4 ⭐ (Python)
+* 2022 - 4 ⭐ (Python)
+* 2021 - 6 ⭐ (Python)
 
 ## 2022 Overview
 
 | Day | Name                                                    | Stars |
 | --- | ------------------------------------------------------- | ----- |
 | 01  | [Calorie Counting](https://adventofcode.com/2022/day/1) | ⭐⭐    |
-| 02  |                                                         |       |
+| 02  | [Rock Paper Scissors](https://adventofcode.com/2022/day/2) | ⭐⭐    |
 | 03  |                                                         |       |
 | 04  |                                                         |       |
 | 05  |                                                         |       |
