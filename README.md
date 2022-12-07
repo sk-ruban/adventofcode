@@ -16,7 +16,7 @@ Here are my solutions for the annual Advent of Code (AoC) event in December. Hoh
 | 04  | [Camp Cleanup](https://adventofcode.com/2022/day/4) | ⭐⭐    |                                                        |       |
 | 05  | [Supply Stacks](https://adventofcode.com/2022/day/5) | ⭐⭐    |                                                           |       |
 | 06  | [Tuning Trouble](https://adventofcode.com/2022/day/6) | ⭐⭐    |                                                          |       |
-| 07  |                                                         |       |
+| 07  | [No Space Left On Device](https://adventofcode.com/2022/day/7) | ⭐⭐                                                       |       |
 | 08  |                                                         |       |
 | 09  |                                                         |       |
 | 10  |                                                         |       |
