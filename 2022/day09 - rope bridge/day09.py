@@ -12,18 +12,17 @@ def head_move(direction, pos):
 
 
 def tail_move(direction, head, tail):
-    x_diff = abs(head[0] - tail[0])
-    y_diff = abs(head[1] - tail[1])
-    if (x_diff or y_diff) == 2 and (x_diff or y_diff) == 1:
-        tail = [head[0], head[1]]
-    elif x_diff == 2 or y_diff == 2:
-        match direction:
-            case 'R': tail = [head[0] - 1, head[1]]
-            case 'L': tail = [head[0] + 1, head[1]]
-            case 'U': tail = [head[0], head[1] - 1]
-            case 'D': tail = [head[0], head[1] + 1]
-    elif x_diff > 0 and y_diff > 0:
-        print("LOL")
+    x_diff = head[0] - tail[0]
+    y_diff = head[1] - tail[1]
+    if abs(x_diff) <= 1 and abs(y_diff) <= 1:
+        return tail
+    if x_diff == 0:
+        tail[1] += 1 if y_diff == 2 else -1
+    elif y_diff == 0:
+        tail[0] += 1 if x_diff == 2 else -1
+    else:
+        tail[1] += 1 if y_diff > 0 else -1
+        tail[0] += 1 if x_diff > 0 else -1
     return tail
 
 
@@ -40,7 +39,9 @@ def positions(path, length):
     return len(tail_history)
 
 
-path = [x.split() for x in open('test_input.txt')]
+path = [x.split() for x in open('input')]
+# silver
 print(positions(path, 2))
+# gold
 print(positions(path, 10))
 
