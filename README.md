@@ -3,7 +3,7 @@
 <a href="https://adventofcode.com/2022"><img src="2022/calender.png" width="80%" /></a>
 
 Here are my solutions for the annual Advent of Code (AoC) event in December. Hohoho!🎄🎅🎄
-* 2022 - 16 ⭐ (Python)
+* 2022 - 17 ⭐ (Python)
 * 2021 - 6 ⭐ (Python)
 
 ## 2022 Overview
@@ -18,7 +18,7 @@ Here are my solutions for the annual Advent of Code (AoC) event in December. Hoh
 | 06  | [Tuning Trouble](https://adventofcode.com/2022/day/6) | ⭐⭐ | |       |
 | 07  | [No Space Left On Device](https://adventofcode.com/2022/day/7) | ⭐⭐ |       |
 | 08  | [Treetop Tree House](https://adventofcode.com/2022/day/8) | ⭐⭐  |
-| 09  |                                                         |       |
+| 09  | [Rope Bridge](https://adventofcode.com/2022/day/9)        | ⭐    |
 | 10  |                                                         |       |
 | 11  |                                                         |       |
 | 12  |                                                         |       |
