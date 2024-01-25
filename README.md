@@ -3,9 +3,10 @@
 <a href="https://adventofcode.com/2023"><img src="2023/calender.png" width="80%" /></a>
 
 Welcome to my repository of solutions for the Advent of Code (AoC), an annual event full of programming puzzles to solve during the holiday season. Hohoho!🎄🎅🎄
-- `/2023` - 4 ⭐ (Python)
-- `/2022` - 18 ⭐ (Python)
-- `/2021` - 6 ⭐ (Python)
+- `/2023` - 04 ⭐ Python 🐍
+- `/2022` - 18 ⭐ Python 🐍
+- `/2021` - 06 ⭐ Python 🐍
+- `/2019` - 04 ⭐ Rust 🦀
 
 ## 2023 Overview
 
