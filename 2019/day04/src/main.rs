@@ -1,41 +1,12 @@
+const INPUT: (i32, i32) = (264360, 746325);
+
 fn main() {
-    let mut counter = 0;
-    for i in 264360..=746325 {
-        if adjacent_digit(i) & never_decrease(i) {
-            counter += 1;
-        }
-    }
-    println!("Part 1: {}", counter)
+    println!("Part 2: {}", (INPUT.0..=INPUT.1).filter(|x| is_cand(*x)).count()); // 617
 }
 
-fn to_digit_vec(num: usize) -> Vec<usize> {
-    num
-        .to_string()
-        .chars()
-        .filter_map(|x| x.to_digit(10))
-        .map(|x| x as usize)
-        .collect()
+fn is_cand(i: i32) -> bool {
+    let chars: Vec<char> = i.to_string().chars().collect();
+    // Change .count() > 1 for Part 1
+    chars.windows(2).all(|x| x[0] <= x[1]) &&
+        chars.iter().any(|x| chars.iter().filter(|y| x == *y).count() == 2)
 }
-
-fn adjacent_digit(num: usize) -> bool {
-    let mut first_digit: usize = 0;
-    for each in to_digit_vec(num) {
-        if each == first_digit {
-            return true
-        }
-        first_digit = each;
-    }
-    return false
-}
-
-fn never_decrease(num: usize) -> bool {
-    let mut first_digit: usize = 0;
-    for each in to_digit_vec(num) {
-        if each < first_digit {
-            return false
-        }
-        first_digit = each;
-    }
-    return true
-}
-
