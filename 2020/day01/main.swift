@@ -6,19 +6,24 @@ var part2: Int = 0
 
 do {
     let content = try String(contentsOfFile: filePath, encoding: .utf8)
-    let lines = content.split(separator: "\n").map(String.init)
+    let numbers = content.split(separator: "\n").compactMap { Int($0) }
 
-    for a in lines {
-        for b in lines {
-            let a = Int(a) ?? 0
-            let b = Int(b) ?? 0
-            if a + b == 2020 {
-                part1 = a*b 
-            }
-            for c in lines {
-                let c = Int(c) ?? 0
+    var seen = Set<Int>()
+    for i in numbers {
+        let complement = 2020 - i
+        if seen.contains(complement) {
+            part1 = i * complement
+            break
+        }
+        seen.insert(i)
+    }
+
+   outerLoop: for a in numbers {
+        for b in numbers {
+            for c in numbers {
                 if a + b + c == 2020 {
                     part2 = a*b*c
+                    break outerLoop
                 }
             }
         }
