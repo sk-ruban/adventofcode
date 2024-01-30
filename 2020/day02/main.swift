@@ -1,7 +1,8 @@
 import Foundation
 
 let filePath = "2020/day02/input"
-var part1 = 0
+var count1 = 0
+var count2 = 0
 
 do {
     let content = try String(contentsOfFile: filePath, encoding: .utf8)
@@ -13,18 +14,40 @@ do {
         let letter = parts[1].first!
         let password = parts[2]
 
-        var frequencyMap: [Character: Int] = [:]
-        for char in password {
-            frequencyMap[char, default: 0] += 1
-        }
-
-        if let frequency = frequencyMap[letter], frequency >= range[0] && frequency <= range[1] {
-            part1 += 1
-        }
+        part1(range: range, letter: letter, password: password)
+        part2(range: range, letter: letter, password: password)
     }
     
 } catch {
     print("Could not read the file: \(error)")
 }
 
-print("Part 1: \(part1)") // 614
+func part1(range: [Int], letter: Character, password: String){
+    var frequencyMap: [Character: Int] = [:]
+    for char in password {
+        frequencyMap[char, default: 0] += 1
+    }
+
+    if let frequency = frequencyMap[letter], frequency >= range[0] && frequency <= range[1] {
+        count1 += 1
+    }
+}
+
+func part2(range: [Int], letter: Character, password: String){
+    if (password[range[0] - 1]! == letter) != (password[range[1] - 1]! == letter) {
+        count2 += 1
+    }
+}
+
+extension String {
+    subscript(_ index: Int) -> Character? {
+        guard index >= 0, index < self.count else {
+            return nil
+        }
+
+        return self[self.index(self.startIndex, offsetBy: index)]
+    }
+}
+
+print("Part 1: \(count1)") // 614
+print("Part 2: \(count2)") // 354
