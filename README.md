@@ -6,8 +6,8 @@ Welcome to my repository of solutions for the Advent of Code (AoC), an annual ev
 - `/2023` - 04 ⭐ Python 🐍
 - `/2022` - 18 ⭐ Python 🐍
 - `/2021` - 06 ⭐ Python 🐍
-- `/2020` - 02 ⭐ Swift 🐦
-- `/2019` - 08 ⭐ Rust 🦀
+- `/2020` - 04 ⭐ Swift 🐦
+- `/2019` - 10 ⭐ Rust 🦀
 
 ## 2023 Overview
 
