@@ -10,25 +10,33 @@ extension StringProtocol {
     }
 }
 
+func steer_slope(_ right: Int, _ down: Int, _ map: [Substring]) -> Int {
+    var pos = 0
+    var trees_hit = 0
+
+    for y in stride(from: 0, to: map.count, by: down) {
+        let x = pos % map[y].count
+        if map[y][x] == "#" {
+            trees_hit += 1
+        }
+        pos += right
+    }
+
+    return trees_hit
+}
+
 let filePath = "2020/day03/input"
-var pos = 0
-var part1 = 0
 
 do {
     let content = try String(contentsOfFile: filePath, encoding: .utf8)
-    let database = content.split(separator: "\n")
+    let map = content.split(separator: "\n")
 
-    for line in database {
-        let mod_pos = pos % line.count
+    let part1 = steer_slope(3, 1, map)
+    print("Part 1: \(part1)") // 220
 
-        if line[mod_pos] == "#" {
-            part1 += 1
-        }
-        pos += 3
-    }
+    let part2 = steer_slope(1, 1, map) * part1 * steer_slope(5, 1, map) * steer_slope(7, 1, map) * steer_slope(1, 2, map)
+    print("Part 2: \(part2)") // 2138320800
     
 } catch {
     print("Could not read the file: \(error)")
 }
-
-print("Part 1: \(part1)") // 220
