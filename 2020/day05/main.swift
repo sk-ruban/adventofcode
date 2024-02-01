@@ -26,5 +26,9 @@ do {
         seats.append(seat_id)
     }
 
-    print("Part 1: \(seats.max() ?? 0)") // 878
+    let part1 = seats.max()!
+    let part2 = (seats.min()!...seats.max()!).filter{ !seats.contains($0) }.first!
+
+    print("Part 1: \(part1)") // 878
+    print("Part 2: \(part2)") // 504
 }
