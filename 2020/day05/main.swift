@@ -8,22 +8,13 @@ do {
     var seats = [Int]()
 
     for pass in passes {
-        var row_max = 128
-        var row_min = 0
-        var col_max = 8
-        var col_min = 0
+        let rowPart = pass.prefix(7).replacingOccurrences(of: "F", with: "0").replacingOccurrences(of: "B", with: "1")
+        let colPart = pass.suffix(3).replacingOccurrences(of: "L", with: "0").replacingOccurrences(of: "R", with: "1")
 
-        for partition in pass {
-            switch partition {
-                case "F": row_max = (row_max + row_min) / 2
-                case "B": row_min = row_min + ((row_max - row_min) / 2)
-                case "L": col_max = (col_max + col_min) / 2
-                case "R": col_min = col_min + ((col_max - col_min) / 2)
-                default: break  
-            }
+        if let row = Int(rowPart, radix: 2), let col = Int(colPart, radix: 2) {
+            let seatID = row * 8 + col
+            seats.append(seatID)
         }
-        let seat_id = row_min * 8 + col_min
-        seats.append(seat_id)
     }
 
     let part1 = seats.max()!
