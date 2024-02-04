@@ -6,29 +6,33 @@ let rules = content.split(separator: "\n")
 
 typealias inner = String
 typealias outer = String
-var bagGraph = [inner: [outer]]()
+var bagGraph1 = [inner: [outer]]()
+var bagGraph2 = [outer: [inner: Int]]()
 
 for rule in rules {
     let parts = rule.components(separatedBy: " bags contain ")
     let outerBag = parts[0]
     let innerBags = parts[1].components(separatedBy: ",")
 
-    for bag in innerBags {
-        let innerParts = bag.trimmingCharacters(in: .whitespaces).components(separatedBy: " ")
-        let count = innerParts[0]
-        let innerBag = innerParts[1] + " " + innerParts[2]
+    if !innerBags[0].starts(with: "no other") {
+        for bag in innerBags {
+            let innerParts = bag.trimmingCharacters(in: .whitespaces).components(separatedBy: " ")
+            guard let count = Int(innerParts[0]) else {continue}
+            let innerBag = innerParts[1] + " " + innerParts[2]
 
-        bagGraph[innerBag, default: []].append(outerBag)
+            bagGraph1[innerBag, default: []].append(outerBag)
+            bagGraph2[outerBag, default: [:]][innerBag] = count
+        }
     }
 }
 
-func findAllContaining(for bag: String, in graph: [inner: [outer]]) -> Set<String> {
+func findAllContaining(for bag: String) -> Set<String> {
     var visited = Set<String>()
     var toVisit = [bag]
 
     while !toVisit.isEmpty {
         let currentBag = toVisit.removeLast()
-        guard let containingBags = graph[currentBag] else {continue}
+        guard let containingBags = bagGraph1[currentBag] else {continue}
 
         for containingBag in containingBags where !visited.contains(containingBag) {
             visited.insert(containingBag)
@@ -39,4 +43,10 @@ func findAllContaining(for bag: String, in graph: [inner: [outer]]) -> Set<Strin
     return visited
 }
 
-print("Part 1: \(findAllContaining(for: "shiny gold", in: bagGraph).count)") // 274
+func findChildrenCount(in bag: String) -> Int {
+    let contents = bagGraph2[bag] ?? [:]
+    return 1 + contents.map { $0.value * findChildrenCount(in: $0.key)}.reduce(0, +)
+}
+
+print("Part 1: \(findAllContaining(for: "shiny gold").count)") // 274
+print("Part 2: \(findChildrenCount(in: "shiny gold") - 1)") // 158730
