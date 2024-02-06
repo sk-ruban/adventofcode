@@ -34,4 +34,21 @@ func findInvalid(from data: [Int], preamble: Int) -> Int {
     fatalError("All sums are possible")
 }
 
-print("Part 1: \(findInvalid(from: data, preamble: preamble))") // 88311122
+let invalid = findInvalid(from: data, preamble: preamble)
+var contiguousSet = [Int]()
+
+outerLoop: for j in 0..<data.count {
+    innerLoop: for k in (j+1)..<data.count {
+        let newSum = data[j...k].reduce(0, +)
+        if newSum > invalid {
+            break innerLoop
+        }
+        else if newSum == invalid {
+            contiguousSet = Array(data[j...k])
+            break outerLoop
+        }
+    }
+}
+
+print("Part 1: \(invalid)") // 88311122
+print("Part 2: \(contiguousSet.min()! + contiguousSet.max()!)") // 13549369
