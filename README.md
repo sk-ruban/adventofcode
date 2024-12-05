@@ -18,5 +18,5 @@ Welcome to my repository of solutions for the Advent of Code (AoC), an annual ev
 | 02  | [Red-Nosed Reports](https://adventofcode.com/2024/day/2)     | ⭐ ⭐   |
 | 03  | [Mull It Over](https://adventofcode.com/2024/day/3)     | ⭐ ⭐   |
 | 04  | [Ceres Search](https://adventofcode.com/2024/day/4)     | 🪨 🪨   |
-| 03  | [Print Queue](https://adventofcode.com/2024/day/5)     | ⭐ ⭐   |
+| 05  | [Print Queue](https://adventofcode.com/2024/day/5)     | ⭐ ⭐   |
 | ... | ...                                                    | ...   |
