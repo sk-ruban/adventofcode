@@ -1,12 +1,17 @@
 file = [x.strip() for x in open('input')]
-start = 50
-part1 = 0
+dial = 50
+part1 = part2 = 0
 
 for rotation in file:
-    direction = -1 if rotation[0] == 'L' else 1
-    distance = int(rotation[1:])
-    start += direction * distance
-    if start % 100 == 0:
-        part1 += 1
+    delta = int(rotation[1:]) * (-1 if rotation[0] == 'L' else 1)
+    dial = (dial + delta) % 100
 
-print(part1)
+    if dial == 0:
+        part1 += 1
+        part2 += 1
+
+    part2 += abs(delta) // 100
+    part2 += delta > 0 and dial < (delta % 100) and dial != 0
+    part2 += delta < 0 and dial > 100 - (abs(delta) % 100)
+
+print(part1, part2)
