@@ -1,13 +1,20 @@
 banks = open("input").read().strip().split("\n")
-part1 = part2 = 0
 
-for bank in banks:
+def solve(length):
     joltage = 0
 
-    for i in range(len(bank)-1):
-        for j in range(i+1, len(bank)):
-            joltage = max(joltage, int(bank[i] +bank[j]))
+    for bank in banks:
+        best = []
+        remainder = bank
 
-    part1 += joltage
+        for i in range(length):
+            window = len(remainder) - length + i + 1
+            best_digit = max(remainder[:window])
+            remainder = remainder[remainder.index(best_digit) + 1:]
+            best.append(best_digit)
 
-print(part1, part2)
+        joltage += int("".join(best))
+
+    return joltage
+
+print(solve(2), solve(12))
