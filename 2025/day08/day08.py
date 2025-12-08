@@ -31,4 +31,15 @@ for _, i, j in distances[:1000]:
 sizes = Counter(find(i) for i in range(n))
 part1 = prod(count for root, count in sizes.most_common(3))
 
-print(part1)
+parent = list(range(n))
+circuitsNum = n
+
+for _, i, j in distances:
+    if find(i) != find(j):
+        union(i, j)
+        circuitsNum -= 1
+        if circuitsNum == 1:
+            part2 = boxes[i][0] * boxes[j][0]
+            break
+
+print(part1, part2)
