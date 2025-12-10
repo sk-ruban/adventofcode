@@ -1,8 +1,18 @@
+from itertools import combinations, starmap, compress
+from shapely.geometry import Polygon, box
+
 tiles = [tuple(map(int, line.split(','))) for line in open("input")]
-part1 = 0
+rects = []
+areas = []
 
-for i, (x, y) in enumerate(tiles):
-    for a, b in tiles[i+1:]:
-        part1 = max(part1, (abs(x - a) + 1) * (abs(y - b) + 1))
+for (x, y), (a, b) in combinations(tiles, 2):
+    size = (abs(x - a) + 1) * (abs(y - b) + 1)
+    rects.append((min(x, a), min(y, b), max(x, a), max(y, b)))
+    areas.append(size)
 
-print(part1)
+part1 = max(areas)
+
+poly = Polygon(tiles)
+part2 = max(compress(areas, map(poly.contains, starmap(box, rects))))
+
+print(part1, part2)
