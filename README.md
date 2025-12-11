@@ -3,7 +3,7 @@
 <!-- <a href="https://adventofcode.com/2023"><img src="2023/calender.png" width="80%" /></a> -->
 
 Welcome to my repository of solutions for the Advent of Code (AoC), an annual event of programming puzzles to solve during the holiday season. Hohoho! 🎄🎅🎄
-- `/2025` - 18 ⭐ Python 🐍
+- `/2025` - 21 ⭐ Python 🐍
 - `/2024` - 08 ⭐ Python 🐍
 - `/2023` - 04 ⭐ Python 🐍
 - `/2022` - 18 ⭐ Python 🐍
@@ -24,4 +24,6 @@ Welcome to my repository of solutions for the Advent of Code (AoC), an annual ev
 | 07  | [Laboratories](https://adventofcode.com/2025/day/7)     | ⭐ ⭐   |
 | 08  | [Playground](https://adventofcode.com/2025/day/8)     | ⭐ ⭐   |
 | 09  | [Movie Theater](https://adventofcode.com/2025/day/9)     | ⭐ ⭐   |
+| 10  | [Factory](https://adventofcode.com/2025/day/10)     | ⭐ 🪨  |
+| 11  | [Reactor](https://adventofcode.com/2025/day/11)     | ⭐ ⭐   |
 | ... | ...                                                    | ...   |
