@@ -27,3 +27,9 @@ Welcome to my repository of solutions for the Advent of Code (AoC), an annual ev
 | 10  | [Factory](https://adventofcode.com/2025/day/10)     | ⭐ 🪨  |
 | 11  | [Reactor](https://adventofcode.com/2025/day/11)     | ⭐ ⭐   |
 | 12  | [Christmas Tree Farm](https://adventofcode.com/2025/day/11)     | ⭐ 🪨   |
+
+## 2023 Overview
+
+| Day | Name                                                   | Stars |
+| --- |--------------------------------------------------------|-------|
+| 01  | [Trebuchet?!](https://adventofcode.com/2023/day/1)     | ⭐ ⭐   |
