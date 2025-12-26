@@ -33,3 +33,4 @@ Welcome to my repository of solutions for the Advent of Code (AoC), an annual ev
 | Day | Name                                                   | Stars |
 | --- |--------------------------------------------------------|-------|
 | 01  | [Trebuchet?!](https://adventofcode.com/2023/day/1)     | ⭐ ⭐   |
+| 01  | [Cube Conundrum](https://adventofcode.com/2023/day/2)     | ⭐ ⭐   |
