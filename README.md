@@ -5,7 +5,7 @@
 Welcome to my repository of solutions for the Advent of Code (AoC), an annual event of programming puzzles to solve during the holiday season. Hohoho! 🎄🎅🎄
 - `/2025` - 22 ⭐ Python 🐍
 - `/2024` - 08 ⭐ Python 🐍
-- `/2023` - 06 ⭐ Python 🐍
+- `/2023` - 08 ⭐ Python 🐍
 - `/2022` - 18 ⭐ Python 🐍
 - `/2021` - 06 ⭐ Python 🐍
 - `/2020` - 16 ⭐ Swift 🐦
@@ -36,3 +36,5 @@ Welcome to my repository of solutions for the Advent of Code (AoC), an annual ev
 | 02  | [Cube Conundrum](https://adventofcode.com/2023/day/2)     | ⭐ ⭐   |
 | 03  | [Gear Ratios](https://adventofcode.com/2023/day/3)     | 🪨 🪨   |
 | 04  | [Scratchcards](https://adventofcode.com/2023/day/4)     | ⭐ ⭐   |
+| 05  | [If You Give A Seed A Fertilizer](https://adventofcode.com/2023/day/5)     | ⭐ 🪨   |
+| 06  | [Wait For It](https://adventofcode.com/2023/day/6)     | ⭐      |
