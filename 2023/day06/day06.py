@@ -1,18 +1,16 @@
-from math import sqrt, ceil, floor
+from math import sqrt, ceil, floor, prod
 
 document = open("input").read().splitlines()
-part1 = 1
+time = document[0].split(": ")[1].split()
+dist = document[1].split(": ")[1].split()
 
-time = [int(t) for t in document[0].split(": ")[1].split()]
-dist = [int(d) for d in document[1].split(": ")[1].split()]
-
-for i in range(len(time)):
-    t = time[i]
-    d = dist[i] + 1
-
+def ways(t, d):
+    d += 1
     b1 = ceil((t - sqrt(t*t - 4*d)) / 2)
     b2 = floor((t + sqrt(t*t - 4*d)) / 2)
+    return b2 - b1 + 1
 
-    part1 *= (b2 - b1 + 1)
+part1 = prod(ways(int(t), int(d)) for t, d in zip(time, dist))
+part2 = ways(int("".join(time)), int("".join(dist)))
 
-print(part1)
+print(part1, part2)
