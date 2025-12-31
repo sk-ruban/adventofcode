@@ -7,5 +7,6 @@ def recurse(line):
     return line[-1] + recurse(diffs)
 
 part1 = sum(recurse(line) for line in report)
+part2 = sum(recurse(line[::-1]) for line in report)
 
-print(part1)
+print(part1, part2)
