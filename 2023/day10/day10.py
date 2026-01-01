@@ -1,10 +1,13 @@
 sketch = open("input").read().splitlines()
-pipes = [(-1,0,"|7F"), (1,0,"|LJ"), (0,-1,"-LF"), (0,1,"-J7")]
 
-for i in range(len(sketch)):
-    idx = sketch[i].find('S')
-    if idx != -1:
-        start = (i,idx)
+for i, line in enumerate(sketch):
+    if 'S' in line:
+        start = (i, line.index('S'))
+        break
+
+loop = {start}
+coord, prev = start, None
+pipes = [(-1,0,"|7F"), (1,0,"|LJ"), (0,-1,"-LF"), (0,1,"-J7")]
 
 r, c = start
 for dr, dc, valid in pipes:
@@ -16,6 +19,7 @@ for dr, dc, valid in pipes:
 
 steps = 1
 while coord != start:
+    loop.add(coord)
     r, c = coord
     tile = sketch[r][c]
 
@@ -32,4 +36,23 @@ while coord != start:
     steps += 1
 
 part1 = steps // 2
-print(part1)
+part2 = 0
+
+for r in range(len(sketch)):
+    crossings = 0
+    for c in range(len(sketch[r])):
+        if (r, c) in loop:
+            tile = sketch[r][c]
+            if tile == '|':
+                crossings += 1
+            elif tile in 'FL':
+                cc = c + 1
+                while sketch[r][cc] == '-':
+                    cc += 1
+                closing = sketch[r][cc]
+                if (tile == 'F' and closing == 'J') or (tile == 'L' and closing == '7'):
+                    crossings += 1
+        elif crossings % 2 == 1:
+            part2 += 1
+
+print(part1, part2)
