@@ -42,3 +42,4 @@ Welcome to my repository of solutions for the Advent of Code (AoC), an annual ev
 | 08  | [Haunted Wasteland](https://adventofcode.com/2023/day/8)     | ⭐ ⭐    |
 | 09  | [Mirage Maintenance](https://adventofcode.com/2023/day/9)     | ⭐ ⭐    |
 | 10  | [Pipe Maze](https://adventofcode.com/2023/day/10)     | ⭐ 🪨    |
+| 11  | [Cosmic Expansion](https://adventofcode.com/2023/day/11)     | ⭐     |
