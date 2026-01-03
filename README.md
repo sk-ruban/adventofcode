@@ -5,7 +5,7 @@
 Welcome to my repository of solutions for the Advent of Code (AoC), an annual event of programming puzzles to solve during the holiday season. Hohoho! 🎄🎅🎄
 - `/2025` - 22 ⭐ Python 🐍
 - `/2024` - 08 ⭐ Python 🐍
-- `/2023` - 19 ⭐ Python 🐍
+- `/2023` - 20 ⭐ Python 🐍
 - `/2022` - 18 ⭐ Python 🐍
 - `/2021` - 06 ⭐ Python 🐍
 - `/2020` - 16 ⭐ Swift 🐦
@@ -44,4 +44,4 @@ Welcome to my repository of solutions for the Advent of Code (AoC), an annual ev
 | 10  | [Pipe Maze](https://adventofcode.com/2023/day/10)     | ⭐ 🪨    |
 | 11  | [Cosmic Expansion](https://adventofcode.com/2023/day/11)     | ⭐ ⭐    |
 | 12  | [Hot Springs](https://adventofcode.com/2023/day/12)     | 🪨 🪨    |
-| 13  | [Point of Incidence](https://adventofcode.com/2023/day/13)     | ⭐     |
+| 13  | [Point of Incidence](https://adventofcode.com/2023/day/13)     | ⭐ ⭐    |
