@@ -5,7 +5,7 @@
 Welcome to my repository of solutions for the Advent of Code (AoC), an annual event of programming puzzles to solve during the holiday season. Hohoho! 🎄🎅🎄
 - `/2025` - 22 ⭐ Python 🐍
 - `/2024` - 08 ⭐ Python 🐍
-- `/2023` - 22 ⭐ Python 🐍
+- `/2023` - 24 ⭐ Python 🐍
 - `/2022` - 18 ⭐ Python 🐍
 - `/2021` - 06 ⭐ Python 🐍
 - `/2020` - 16 ⭐ Swift 🐦
@@ -47,3 +47,4 @@ Welcome to my repository of solutions for the Advent of Code (AoC), an annual ev
 | 13  | [Point of Incidence](https://adventofcode.com/2023/day/13)     | ⭐ ⭐    |
 | 14  | [Parabolic Reflector Dish](https://adventofcode.com/2023/day/14)     | ⭐ 🪨    |
 | 15  | [Lens Library](https://adventofcode.com/2023/day/15)     | ⭐ ⭐   |
+| 16  | [The Floor Will Be Lava](https://adventofcode.com/2023/day/16)     | ⭐    |
