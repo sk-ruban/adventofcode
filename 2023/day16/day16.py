@@ -31,4 +31,9 @@ def solve(start_pos, start_dir):
     return len(set(pos for pos, dir in seen))
 
 part1 = solve(0, 1)
-print(part1)
+part2 = max(solve(pos, dir)
+            for dir in (1, -1, 1j, -1j)
+            for pos in grid if pos-dir not in grid
+        )
+
+print(part1, part2)
