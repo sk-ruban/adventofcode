@@ -10,6 +10,7 @@ Welcome to my repository of solutions for the Advent of Code (AoC), an annual ev
 - `/2021` - 06 ⭐ Python 🐍
 - `/2020` - 16 ⭐ Swift 🐦
 - `/2019` - 10 ⭐ Rust 🦀
+- `/2015` - 02 ⭐ Python 🐍
 
 ## 2025 Overview
 
@@ -53,3 +54,9 @@ Welcome to my repository of solutions for the Advent of Code (AoC), an annual ev
 | 19  | [Aplenty](https://adventofcode.com/2023/day/19)     | ⭐ 🪨    |
 | 20  | [Pulse Propagation](https://adventofcode.com/2023/day/20)     | 🪨 🪨    |
 | 21  | [Step Counter](https://adventofcode.com/2023/day/21)     | ⭐ 🪨    |
+
+## 2015 Overview
+
+| Day | Name                                                   | Stars |
+| --- |--------------------------------------------------------|-------|
+| 01  | [Not Quite Lisp](https://adventofcode.com/2015/day/1)     | ⭐ ⭐   |
