@@ -10,7 +10,7 @@ Welcome to my repository of solutions for the Advent of Code (AoC), an annual ev
 - `/2021` - 06 ⭐ Python 🐍
 - `/2020` - 16 ⭐ Swift 🐦
 - `/2019` - 10 ⭐ Rust 🦀
-- `/2015` - 02 ⭐ Python 🐍
+- `/2015` - 04 ⭐ Python 🐍
 
 ## 2025 Overview
 
@@ -60,3 +60,4 @@ Welcome to my repository of solutions for the Advent of Code (AoC), an annual ev
 | Day | Name                                                   | Stars |
 | --- |--------------------------------------------------------|-------|
 | 01  | [Not Quite Lisp](https://adventofcode.com/2015/day/1)     | ⭐ ⭐   |
+| 02  | [I Was Told There Would Be No Math](https://adventofcode.com/2015/day/2)     | ⭐ ⭐   |
