@@ -10,7 +10,7 @@ Welcome to my repository of solutions for the Advent of Code (AoC), an annual ev
 - `/2021` - 06 ⭐ Python 🐍
 - `/2020` - 16 ⭐ Swift 🐦
 - `/2019` - 10 ⭐ Rust 🦀
-- `/2015` - 08 ⭐ Python 🐍
+- `/2015` - 10 ⭐ Python 🐍
 
 ## 2025 Overview
 
@@ -63,3 +63,4 @@ Welcome to my repository of solutions for the Advent of Code (AoC), an annual ev
 | 02  | [I Was Told There Would Be No Math](https://adventofcode.com/2015/day/2)     | ⭐ ⭐   |
 | 03  | [Perfectly Spherical Houses in a Vacuum](https://adventofcode.com/2015/day/3)     | ⭐ ⭐   |
 | 04  | [The Ideal Stocking Stuffer](https://adventofcode.com/2015/day/4)     | ⭐ ⭐   |
+| 05  | [Doesn't He Have Intern-Elves For This?](https://adventofcode.com/2015/day/5)     | ⭐ ⭐   |
