@@ -10,7 +10,7 @@ Welcome to my repository of solutions for the Advent of Code (AoC), an annual ev
 - `/2021` - 06 ⭐ Python 🐍
 - `/2020` - 16 ⭐ Swift 🐦
 - `/2019` - 10 ⭐ Rust 🦀
-- `/2015` - 12 ⭐ Python 🐍
+- `/2015` - 14 ⭐ Python 🐍
 
 ## 2025 Overview
 
@@ -65,3 +65,4 @@ Welcome to my repository of solutions for the Advent of Code (AoC), an annual ev
 | 04  | [The Ideal Stocking Stuffer](https://adventofcode.com/2015/day/4)     | ⭐ ⭐   |
 | 05  | [Doesn't He Have Intern-Elves For This?](https://adventofcode.com/2015/day/5)     | ⭐ ⭐   |
 | 06  | [Probably a Fire Hazard](https://adventofcode.com/2015/day/6)     | ⭐ ⭐   |
+| 07  | [Some Assembly Required](https://adventofcode.com/2015/day/7)     | ⭐ ⭐   |
