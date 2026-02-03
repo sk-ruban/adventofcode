@@ -10,7 +10,7 @@ Welcome to my repository of solutions for the Advent of Code (AoC), an annual ev
 - `/2021` - 06 ⭐ Python 🐍
 - `/2020` - 16 ⭐ Swift 🐦
 - `/2019` - 10 ⭐ Rust 🦀
-- `/2015` - 16 ⭐ Python 🐍
+- `/2015` - 18 ⭐ Python 🐍
 
 ## 2025 Overview
 
@@ -67,3 +67,4 @@ Welcome to my repository of solutions for the Advent of Code (AoC), an annual ev
 | 06  | [Probably a Fire Hazard](https://adventofcode.com/2015/day/6)     | ⭐ ⭐   |
 | 07  | [Some Assembly Required](https://adventofcode.com/2015/day/7)     | ⭐ ⭐   |
 | 08  | [Matchsticks](https://adventofcode.com/2015/day/8)     | ⭐ ⭐   |
+| 09  | [All in a Single Night](https://adventofcode.com/2015/day/9)     | ⭐ ⭐   |
