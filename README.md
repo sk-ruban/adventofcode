@@ -10,7 +10,7 @@ Welcome to my repository of solutions for the Advent of Code (AoC), an annual ev
 - `/2021` - 06 ⭐ Python 🐍
 - `/2020` - 16 ⭐ Swift 🐦
 - `/2019` - 10 ⭐ Rust 🦀
-- `/2015` - 22 ⭐ Python 🐍
+- `/2015` - 24 ⭐ Python 🐍
 
 ## 2025 Overview
 
@@ -70,3 +70,4 @@ Welcome to my repository of solutions for the Advent of Code (AoC), an annual ev
 | 09  | [All in a Single Night](https://adventofcode.com/2015/day/9)     | ⭐ ⭐   |
 | 10  | [Elves Look, Elves Say](https://adventofcode.com/2015/day/10)     | ⭐ ⭐   |
 | 11  | [Corporate Policy](https://adventofcode.com/2015/day/11)     | ⭐ ⭐   |
+| 12  | [JSAbacusFramework.io](https://adventofcode.com/2015/day/12)     | ⭐ ⭐   |
