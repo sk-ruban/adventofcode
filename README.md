@@ -10,7 +10,7 @@ Welcome to my repository of solutions for the Advent of Code (AoC), an annual ev
 - `/2021` - 06 ⭐ Python 🐍
 - `/2020` - 16 ⭐ Swift 🐦
 - `/2019` - 10 ⭐ Rust 🦀
-- `/2015` - 28 ⭐ Python 🐍
+- `/2015` - 30 ⭐ Python 🐍
 
 ## 2025 Overview
 
@@ -73,3 +73,4 @@ Welcome to my repository of solutions for the Advent of Code (AoC), an annual ev
 | 12  | [JSAbacusFramework.io](https://adventofcode.com/2015/day/12)     | ⭐ ⭐   |
 | 13  | [Knights of the Dinner Table](https://adventofcode.com/2015/day/13)     | ⭐ ⭐   |
 | 14  | [Reindeer Olympics](https://adventofcode.com/2015/day/14)     | ⭐ ⭐   |
+| 15  | [Science for Hungry People](https://adventofcode.com/2015/day/15)     | ⭐ ⭐   |
