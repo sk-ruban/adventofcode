@@ -10,7 +10,7 @@ Welcome to my repository of solutions for the Advent of Code (AoC), an annual ev
 - `/2021` - 06 ⭐ Python 🐍
 - `/2020` - 16 ⭐ Swift 🐦
 - `/2019` - 10 ⭐ Rust 🦀
-- `/2015` - 34 ⭐ Python 🐍
+- `/2015` - 36 ⭐ Python 🐍
 
 ## 2025 Overview
 
@@ -76,3 +76,4 @@ Welcome to my repository of solutions for the Advent of Code (AoC), an annual ev
 | 15  | [Science for Hungry People](https://adventofcode.com/2015/day/15)     | ⭐ ⭐   |
 | 16  | [Aunt Sue](https://adventofcode.com/2015/day/16)     | ⭐ ⭐   |
 | 17  | [No Such Thing as Too Much](https://adventofcode.com/2015/day/17)     | ⭐ ⭐   |
+| 18  | [Like a GIF For Your Yard](https://adventofcode.com/2015/day/18)     | ⭐ ⭐   |
