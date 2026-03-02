@@ -10,7 +10,7 @@ Welcome to my repository of solutions for the Advent of Code (AoC), an annual ev
 - `/2021` - 06 ⭐ Python 🐍
 - `/2020` - 16 ⭐ Swift 🐦
 - `/2019` - 10 ⭐ Rust 🦀
-- `/2015` - 38 ⭐ Python 🐍
+- `/2015` - 40 ⭐ Python 🐍
 
 ## 2025 Overview
 
@@ -78,3 +78,4 @@ Welcome to my repository of solutions for the Advent of Code (AoC), an annual ev
 | 17  | [No Such Thing as Too Much](https://adventofcode.com/2015/day/17)     | ⭐ ⭐   |
 | 18  | [Like a GIF For Your Yard](https://adventofcode.com/2015/day/18)     | ⭐ ⭐   |
 | 19  | [Medicine for Rudolph](https://adventofcode.com/2015/day/19)     | ⭐ ⭐   |
+| 20  | [Infinite Elves and Infinite Houses](https://adventofcode.com/2015/day/20)     | ⭐ ⭐   |
